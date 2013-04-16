@@ -35,7 +35,6 @@
                     <li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
                 {% endif %}
-                <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
                 {#{% for cat, null in categories %}
                     <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                 {% endfor %}#}
@@ -53,7 +52,19 @@
                            <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
                         </ul>
-                </div>
+		</div>
+		<div class="widget">
+		    <h2>Tags</h2>
+		    <ul class="cloud">
+			{% for tag in tag_cloud %}
+			<li class="tag-{{ tag.1 }}">
+			  <a href="{{ SITEURL }}/{{tag.0.url }}">{{ tag.0 }}</a>
+			</li>
+			{% endfor %}
+		    </ul>
+		</div>
+
+
         {% if LINKS %}
                 <div class="widget blogroll">
                         <h2>Blogroll</h2>
@@ -85,8 +96,6 @@
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is «notmyidea-cms», a modified version of «notmyidea», the default theme.</p>
         </footer><!-- /#footer -->
 
 {% include 'analytics.html' %}
