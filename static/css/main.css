@@ -360,6 +360,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 .hentry {
 	border-bottom: 1px solid #eee;
 	padding: 1.5em 0;
+	overflow: auto;
 }
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
@@ -367,6 +368,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
+
+.hentry header { clear:both; }
 
 .hentry .post-info * {font-style: normal;}
 
