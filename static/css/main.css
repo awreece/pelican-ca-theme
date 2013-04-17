@@ -310,13 +310,14 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
         Tag Cloud
 *****************/
 
-/*
 #sidebar .cloud { list-style-type: none;}
-.cloud .tag-1 {font-size: 3em; line-height: 1;}
-.cloud .tag-2 {font-size: 2em; line-height: 1.5;}
-.cloud .tag-3 {font-size: 1.5em; line-height: 2;}
-.cloud .tag-4 {font-size: 1em; line-height: 3;}
-*/
+#sidebar .cloud a { display: inline; border-bottom: none }
+#sidebar .cloud .tag { white-space: nowrap }
+#sidebar .cloud li { display: inline }
+.cloud .tag-1 {font-size: 135%; line-height: 1em}
+.cloud .tag-2 {font-size: 120%; line-height: 1em}
+.cloud .tag-3 {font-size: 105%; line-height: 1em}
+.cloud .tag-4 {font-size: 90%; line-height: 1em}
 
 /*
 	About

@@ -58,7 +58,7 @@
 		    <ul class="cloud">
 			{% for tag in tag_cloud %}
 			<li class="tag-{{ tag.1 }}">
-			  <a href="{{ SITEURL }}/{{tag.0.url }}">{{ tag.0 }}</a>
+			  <a class="tag" href="{{ SITEURL }}/{{tag.0.url }}">{{ tag.0 }}</a>
 			</li>
 			{% endfor %}
 		    </ul>
