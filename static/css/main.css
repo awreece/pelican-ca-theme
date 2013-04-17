@@ -270,11 +270,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #sidebar li:last-child,
 #sidebar li:last-child a {border: 0}
 
-#sidebar .blogroll li:nth-last-child(2),
-#sidebar .blogroll li:nth-last-child(3),
-#sidebar .blogroll li:nth-last-child(2) a,
-#sidebar .blogroll li:nth-last-child(3) a {border: 0;}
-
 #sidebar a:hover, #sidebar a:active {color: #fff;}
 
 	/* Blogroll */
