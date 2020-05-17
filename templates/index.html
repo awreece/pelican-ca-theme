@@ -3,13 +3,15 @@
 {% block content %}
 {% if articles %}
 <section id="content" class="body">
-    <h1 class="entry-title">Recent articles
-	{% if category %}
-	<a type="application/atom+xml"  href="{{ SITEURL }}/{{CATEGORY_FEED_ATOM % category.slug }}">(feed for this category)</a>
-	{% elif not tag %}
-	<a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">(feed for all posts)</a>
-	{% endif %}
-     </h1>
+     <p>
+    {% if category %}
+    <a type="application/atom+xml"  href="{{ SITEURL }}/{{CATEGORY_FEED_ATOM % category.slug }}">(feed for this category)</a>
+    {% elif not tag %}
+    <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">(feed for all posts)</a>
+    {% endif %}
+     </p>
+
+    <h1 class="entry-title">Recent articles</h1>
  <ol id="posts-list" class="hfeed">
 {% for article in articles %}
   <li><article class="hentry">
