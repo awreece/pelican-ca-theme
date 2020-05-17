@@ -3,7 +3,11 @@
 {% block content %}
 {% if articles %}
 <section id="content" class="body">
- <h1 class="entry-title">Recent articles</h1>
+    <h1 class="entry-title">Recent articles
+	{% if category %}
+	<a href="{{ SITEURL }}/{{ CATEGORY_FEED_ATOM % category.slug }}">(feed)</a>
+	{% endif %}
+ </h1>
  <ol id="posts-list" class="hfeed">
 {% for article in articles %}
   <li><article class="hentry">
