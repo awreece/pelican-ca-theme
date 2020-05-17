@@ -21,8 +21,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  max-width: 1440px;
-  min-width: 1000px;
 }
 
 
@@ -184,6 +182,7 @@ Header
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  min-width: 1000px;
 }
 
 #banner nav ul {list-style: none; margin: 0 auto;}
@@ -226,8 +225,6 @@ Featured
   background: #fff;
   overflow: hidden;
   padding: 20px 20px;
-  min-width: 600px;
-  width: 60%;
 }
 
 /*
